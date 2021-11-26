@@ -1,11 +1,16 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { EmployeesComponent } from "./components/employees/employees.component";
+import { EmployeeDetailComponent } from "./components/employees/employee-detail/employee-detail.component";
+import { EmployeeListComponent } from "./components/employees/employee-list/employee-list.component";
 
 export const APP_ROUTES: Routes = [
     {
         path: "employees",
-        component: EmployeesComponent
+        component: EmployeeListComponent
+    },
+    {
+        path: "employees/:employeeId",
+        component: EmployeeDetailComponent
     },
     {
         path: "",

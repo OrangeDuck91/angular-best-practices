@@ -1,15 +1,18 @@
 .example-container {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-  }
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
   
-  .example-sidenav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-  }
+.example-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
   
+.sii-logo{
+  margin: 10px 45px;
+}
