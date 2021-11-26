@@ -157,15 +157,15 @@ const DummyEmployess: Employee[] = [
 ]
 
 @Injectable({ providedIn: 'root' })
-export class ServiceNameService {
+export class EmployeeService {
     constructor() { }
 
     getAllEmployees(): Observable<Employee[]> {
         return of(DummyEmployess)
     }
 
-    getEmployeeById(): Observable<Employee | null> {
-        return of(DummyEmployess.find(e => e.id) ?? null);
+    getEmployeeById(): Observable<Employee> {
+        return of(DummyEmployess.find(e => e.id));
     }
 
 }

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app.routing.module';
-import { MatListModule } from '@angular/material/list'
+import { MaterialModule } from './shared/material.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +13,11 @@ import { MatListModule } from '@angular/material/list'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
     AppRoutingModule,
-    MatListModule
+    ComponentsModule,
+    // Oh, I used a component from Material, better use the whole material module containing everithing !
+    MaterialModule
+    // The only modules we needed ----> MatListModule, MatSidenavModule <----
   ],
   providers: [],
   bootstrap: [AppComponent]
