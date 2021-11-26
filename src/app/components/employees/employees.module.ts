@@ -5,13 +5,15 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { MaterialModule } from 'src/app/shared/material.module';
 import { MatTableModule } from '@angular/material/table';
 import { CdkTableModule } from '@angular/cdk/table';
+import { AddressComponent } from './address/address.component';
 
 
 
 @NgModule({
   declarations: [
     EmployeeListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    AddressComponent
   ],
   imports: [
     CommonModule,

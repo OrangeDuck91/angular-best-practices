@@ -164,8 +164,8 @@ export class EmployeeService {
         return of(DummyEmployess)
     }
 
-    getEmployeeById(): Observable<Employee> {
-        return of(DummyEmployess.find(e => e.id));
+    getEmployeeById(id: string): Observable<Employee> {
+        return of(DummyEmployess.find(e => e.id == id));
     }
 
 }

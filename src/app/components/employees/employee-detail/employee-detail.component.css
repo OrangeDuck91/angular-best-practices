@@ -1,0 +1,9 @@
+.card-container > *{
+    width: 30%;
+    margin: 2em;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row wrap;
+}
