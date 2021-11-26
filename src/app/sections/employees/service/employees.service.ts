@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, tap, timer } from 'rxjs';
-import { Employee } from '../models/employees.model';
+import { Employee } from '../model/employees.model';
 // For demostration purpose only, for info check https://generatedata.com/generator
 const DummyEmployees: Employee[] = [
     {

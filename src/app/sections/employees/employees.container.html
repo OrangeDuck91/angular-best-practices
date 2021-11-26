@@ -1,0 +1,6 @@
+<p>employees works!</p>
+<app-header [title]="'Liste des employés'"></app-header>
+<app-employee-list [employees]="employees | async"
+                   (employeeSelected)="goToDetail($event)">
+
+</app-employee-list>
