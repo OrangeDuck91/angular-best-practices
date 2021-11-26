@@ -4,6 +4,7 @@ import { ClientDetailsComponent } from "./components/clients/client-details/clie
 import { ClientListComponent } from "./components/clients/client-list/client-list.component";
 import { EmployeeDetailComponent } from "./components/employees/employee-detail/employee-detail.component";
 import { EmployeeListComponent } from "./components/employees/employee-list/employee-list.component";
+import { SupplierListComponent } from "./components/suppliers/supplier-list/supplier-list.component";
 
 export const APP_ROUTES: Routes = [
     {
@@ -21,6 +22,10 @@ export const APP_ROUTES: Routes = [
     {
         path: "clients/:clientId",
         component: ClientDetailsComponent
+    },
+    {
+        path: "suppliers",
+        component: SupplierListComponent
     },
     {
         path: "",
