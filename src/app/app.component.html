@@ -7,9 +7,9 @@
          alt="SII journal Logo : SII letters on blue background"
          class="sii-logo">
     <mat-selection-list [multiple]="false">
-      <mat-list-option>Employées</mat-list-option>
-      <mat-list-option>Clients</mat-list-option>
-      <mat-list-option>Fournisseurs</mat-list-option>
+      <mat-list-option [routerLink]="['/employees']">Employées</mat-list-option>
+      <mat-list-option [routerLink]="['/clients']">Clients</mat-list-option>
+      <mat-list-option [routerLink]="['/suppliers']">Fournisseurs</mat-list-option>
     </mat-selection-list>
   </mat-sidenav>
   <mat-sidenav-content>

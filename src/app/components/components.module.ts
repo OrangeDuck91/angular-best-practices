@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 import { EmployeesModule } from './employees/employees.module';
 import { MaterialModule } from '../shared/material.module';
 
-
-
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     EmployeesModule,
