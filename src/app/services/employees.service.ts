@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable, of, tap, timer } from 'rxjs';
 import { Employee } from '../models/employees.model';
 // For demostration purpose only, for info check https://generatedata.com/generator
-const DummyEmployess: Employee[] = [
+const DummyEmployees: Employee[] = [
     {
         id: "975F65E3-E759-4E94-55AE-19432B77AB55",
         firstName: "Emery",
@@ -161,11 +160,17 @@ export class EmployeeService {
     constructor() { }
 
     getAllEmployees(): Observable<Employee[]> {
-        return of(DummyEmployess)
+        return of(DummyEmployees)
     }
 
     getEmployeeById(id: string): Observable<Employee> {
-        return of(DummyEmployess.find(e => e.id == id));
+        return of(DummyEmployees.find(e => e.id == id));
+    }
+
+    editEmployee(employee: Employee): Observable<any> {
+        return timer(1500).pipe(
+            tap(() => console.log('USER WAS CHANGED'))
+        )
     }
 
 }

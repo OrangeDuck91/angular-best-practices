@@ -1,0 +1,13 @@
+<app-header [title]="client.companyName"></app-header>
+<div class="card-container">
+    <mat-card>
+        <mat-card-title>Informations</mat-card-title>
+        <mat-card-content>
+            <h5>Nom</h5>
+            <p>{{client?.companyName}}</p>
+        </mat-card-content>
+    </mat-card>
+
+    <app-address [address]="client?.address"
+                 [phone]="client?.phone"></app-address>
+</div>

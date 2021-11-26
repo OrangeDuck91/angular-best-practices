@@ -17,4 +17,6 @@ export class SharedComponentsModule { }
 /**
  * Same thing as MaterialModule, you'll have to import the whole Module to use only one of its
  * components. Modules should be coherents, cohesive blocks of components that are always used together.
+ *
+ * Also multiplying "shared" dirs makes it hard to know where to properly add shared code.
  */
