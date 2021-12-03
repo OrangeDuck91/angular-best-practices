@@ -6,7 +6,7 @@ import { Employee } from '../model/employees.model';
   templateUrl: './employee-list.component.html',
   styleUrls: ['./employee-list.component.css']
 })
-export class EmployeeListComponent implements OnInit {
+export class EmployeeListComponent {
 
   @Input()
   employees: Employee[];
@@ -15,11 +15,6 @@ export class EmployeeListComponent implements OnInit {
   employeeSelected = new EventEmitter<Employee>();
 
   displayedColumns: string[] = ['firstName', 'lastName', 'poste', 'mission'];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   selectEmployee(row: Employee) {
     this.employeeSelected.emit(row);

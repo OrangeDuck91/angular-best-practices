@@ -1,0 +1,7 @@
+<!-- The SMART Container get datas, handle actions, and organise DUMB Compnents -->
+<app-header [title]="client.companyName"></app-header>
+<div class="card-container">
+    <app-client-info-card [companyName]="client?.companyName"></app-client-info-card>
+    <app-address [address]="client?.address"
+                 [phone]="client?.phone"></app-address>
+</div>

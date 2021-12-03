@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Client } from 'src/app/models/clients.model';
-import { ClientService } from 'src/app/services/clients.service';
+import { Client } from 'src/app/sections/clients/model/clients.model';
+import { ClientService } from 'src/app/sections/clients/service/clients.service';
 
 @Component({
   selector: 'app-client-list',

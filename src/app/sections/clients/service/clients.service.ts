@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Client } from '../models/clients.model';
+import { Client } from '../model/clients.model';
 
 const DummyClients: Client[] =
     [

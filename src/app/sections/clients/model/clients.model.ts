@@ -4,5 +4,4 @@ export interface Client {
     address: string;
     phone: string;
     email: string;
-
 }

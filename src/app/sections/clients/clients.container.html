@@ -1,0 +1,3 @@
+<app-header [title]="'Liste des clients'"></app-header>
+<app-client-list [clients]="clients | async"
+                 (clientSelected)="goToDetail($event)"></app-client-list>

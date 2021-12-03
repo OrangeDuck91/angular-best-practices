@@ -7,6 +7,8 @@ import { MaterialModule } from './shared/material.module';
 import { ComponentsModule } from './components/components.module';
 import { EmployeesModule } from './sections/employees/employees.module';
 import { EmployeeDetailsModule } from './sections/employees/employee-list/employee-details/employee-details.module';
+import { ClientsModule } from './sections/clients/clients.module';
+import { ClientDetailsModule } from './sections/clients/client-list/client-details/client-details.module';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,11 @@ import { EmployeeDetailsModule } from './sections/employees/employee-list/employ
     BrowserAnimationsModule,
     AppRoutingModule,
     ComponentsModule,
-    EmployeesModule,
     // Temp before lazy loading
+    EmployeesModule,
     EmployeeDetailsModule,
+    ClientsModule,
+    ClientDetailsModule,
     // Oh, I used a component from Material, better use the whole material module containing everithing !
     MaterialModule
     // The only modules we needed ----> MatListModule, MatSidenavModule <----
