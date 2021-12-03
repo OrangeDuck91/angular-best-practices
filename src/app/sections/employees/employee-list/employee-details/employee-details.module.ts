@@ -17,8 +17,5 @@ import { AddressModule } from 'src/app/shared/components/address/address.module'
     HeaderModule,
     AddressModule
   ],
-  exports: [
-    EmployeeDetailsComponent
-  ],
 })
 export class EmployeeDetailsModule { }
