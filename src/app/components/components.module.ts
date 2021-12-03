@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EmployeesModule } from './employees/employees.module';
 import { MaterialModule } from '../shared/material.module';
 import { ClientsModule } from './clients/clients.module';
 import { SuppliersModule } from './suppliers/suppliers.module';
@@ -14,7 +13,6 @@ import { SuppliersModule } from './suppliers/suppliers.module';
      *  everywhere for NO reason! 
      */
     MaterialModule,
-    EmployeesModule,
     ClientsModule,
     SuppliersModule
   ]

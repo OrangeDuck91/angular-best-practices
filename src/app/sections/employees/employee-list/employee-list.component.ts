@@ -21,7 +21,7 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goToDetail(row: Employee) {
+  selectEmployee(row: Employee) {
     this.employeeSelected.emit(row);
   }
 }

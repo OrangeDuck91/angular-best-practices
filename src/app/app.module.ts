@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app.routing.module';
 import { MaterialModule } from './shared/material.module';
 import { ComponentsModule } from './components/components.module';
+import { EmployeesModule } from './sections/employees/employees.module';
+import { EmployeeDetailsModule } from './sections/employees/employee-list/employee-details/employee-details.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,9 @@ import { ComponentsModule } from './components/components.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     ComponentsModule,
+    EmployeesModule,
+    // Temp before lazy loading
+    EmployeeDetailsModule,
     // Oh, I used a component from Material, better use the whole material module containing everithing !
     MaterialModule
     // The only modules we needed ----> MatListModule, MatSidenavModule <----

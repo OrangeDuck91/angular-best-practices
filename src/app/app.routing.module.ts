@@ -2,18 +2,18 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ClientDetailsComponent } from "./components/clients/client-details/client-details.component";
 import { ClientListComponent } from "./components/clients/client-list/client-list.component";
-import { EmployeeDetailComponent } from "./components/employees/employee-detail/employee-detail.component";
-import { EmployeeListComponent } from "./components/employees/employee-list/employee-list.component";
 import { SupplierListComponent } from "./components/suppliers/supplier-list/supplier-list.component";
+import { EmployeeDetailsComponent } from "./sections/employees/employee-list/employee-details/employee-details.container";
+import { EmployeesComponent } from "./sections/employees/employees.container";
 
 export const APP_ROUTES: Routes = [
     {
         path: "employees",
-        component: EmployeeListComponent
+        component: EmployeesComponent
     },
     {
         path: "employees/:employeeId",
-        component: EmployeeDetailComponent
+        component: EmployeeDetailsComponent
     },
     {
         path: "clients",

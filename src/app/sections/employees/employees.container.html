@@ -1,6 +1,5 @@
-<p>employees works!</p>
+<!-- The SMART Container get datas, handle actions, and organise DUMB Compnents -->
 <app-header [title]="'Liste des employés'"></app-header>
 <app-employee-list [employees]="employees | async"
                    (employeeSelected)="goToDetail($event)">
-
 </app-employee-list>

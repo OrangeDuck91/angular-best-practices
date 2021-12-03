@@ -1,1 +1,10 @@
-<p>employee-details works!</p>
+<!-- The SMART Container get datas, handle actions, and organise DUMB Compnents -->
+<app-header [title]="employee?.firstName +' '+ employee?.lastName"></app-header>
+<div class="card-container">
+    <app-employee-poste-card [poste]="employee?.poste"
+                             [mission]="employee?.mission"></app-employee-poste-card>
+    <app-employee-info-card [firstName]="employee?.firstName"
+                            [lastName]="employee?.lastName"></app-employee-info-card>
+    <app-address [address]="employee?.address"
+                 [phone]="employee?.phone"></app-address>
+</div>
