@@ -9,6 +9,7 @@ import { ClientsModule } from './sections/clients/clients.module';
 import { ClientDetailsModule } from './sections/clients/client-list/client-details/client-details.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { SiiSuppliersModule } from './sections/sii-supplier/sii-suppliers.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { MatListModule } from '@angular/material/list';
     EmployeeDetailsModule,
     ClientsModule,
     ClientDetailsModule,
-    // SiiSuppliersModule,
+    SiiSuppliersModule,
     // The only modules we needed ----> MatListModule, MatSidenavModule <----
     MatSidenavModule,
     MatListModule

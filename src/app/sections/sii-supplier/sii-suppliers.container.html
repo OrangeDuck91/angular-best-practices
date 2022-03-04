@@ -1,0 +1,3 @@
+<app-header [title]="'Liste des SiiSuppliers'"></app-header>
+<app-sii-supplier-list [siiSuppliers]="siiSuppliers | async"
+                 (siiSupplierSelected)="goToDetail($event)"></app-sii-supplier-list>

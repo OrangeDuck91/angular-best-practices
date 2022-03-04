@@ -4,6 +4,7 @@ import { ClientDetailsComponent } from "./sections/clients/client-list/client-de
 import { ClientsComponent } from "./sections/clients/clients.container";
 import { EmployeeDetailsComponent } from "./sections/employees/employee-list/employee-details/employee-details.container";
 import { EmployeesComponent } from "./sections/employees/employees.container";
+import { SiiSuppliersComponent } from "./sections/sii-supplier/sii-suppliers.container";
 
 export const APP_ROUTES: Routes = [
     {
@@ -23,10 +24,10 @@ export const APP_ROUTES: Routes = [
         component: ClientDetailsComponent
     },
     // Commande line :  schematics ../section:section sections/SiiSupplier --debug=false
-    // {
-    //     path: "suppliers",
-    //     component: SiiSuppliersComponent
-    // },
+    {
+        path: "suppliers",
+        component: SiiSuppliersComponent
+    },
     {
         path: "",
         redirectTo: "employees",
