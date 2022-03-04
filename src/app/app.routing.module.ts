@@ -10,11 +10,8 @@ import { DefaultComponent } from "./shared/components/default/default.component"
 export const APP_ROUTES: Routes = [
     {
         path: "employees",
-        component: EmployeesComponent
-    },
-    {
-        path: "employees/:employeeId",
-        component: EmployeeDetailsComponent
+        loadChildren: () =>
+            import('~sections/employees/employees.module').then((m) => m.EmployeesModule)
     },
     {
         path: "clients",
@@ -23,7 +20,8 @@ export const APP_ROUTES: Routes = [
     },
     {
         path: "suppliers",
-        component: SiiSuppliersComponent
+        loadChildren: () =>
+            import('~sections/sii-supplier/sii-suppliers.module').then((m) => m.SiiSuppliersModule)
     },
     {
         path: "default",

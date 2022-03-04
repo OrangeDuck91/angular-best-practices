@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { SiiSuppliersComponent } from './sii-suppliers.container';
 import { HeaderModule } from 'src/app/shared/components/header/header.module';
 import { SiiSupplierListModule } from './sii-supplier-list/sii-supplier-list.module';
+import { RouterModule } from '@angular/router';
+import { siiSupplierRoutes } from './sii-supplier.route';
 
 @NgModule({
     declarations: [
@@ -11,7 +13,8 @@ import { SiiSupplierListModule } from './sii-supplier-list/sii-supplier-list.mod
     imports: [
         CommonModule,
         HeaderModule,
-        SiiSupplierListModule
+        SiiSupplierListModule,
+        RouterModule.forChild(siiSupplierRoutes)
     ]
 })
 export class SiiSuppliersModule { }
