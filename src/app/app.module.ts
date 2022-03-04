@@ -10,6 +10,7 @@ import { ClientDetailsModule } from './sections/clients/client-list/client-detai
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { SiiSuppliersModule } from './sections/sii-supplier/sii-suppliers.module';
+import { DefaultModule } from './shared/components/default/default.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SiiSuppliersModule } from './sections/sii-supplier/sii-suppliers.module
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    DefaultModule,
     // Temp before lazy loading
     EmployeesModule,
     EmployeeDetailsModule,
